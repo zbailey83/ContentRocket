@@ -18,8 +18,7 @@ import {
   Facebook,
   Twitter,
   Youtube,
-  Newspaper,
-  Check
+  Newspaper
 } from 'lucide-react';
 import { 
   TechnicalGridBackground, 
@@ -253,9 +252,9 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
       {
         title: 'Session 4: Social Media Automation',
         time: '9:00 AM - 11:00 AM',
-        objectives: ['30-day content calendar', 'Platform variations', 'Repurposing workflows'],
+        objectives: ['Build 30-day content calendar', 'Create platform variations', 'Automated repurposing workflows'],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 2: 30-Day Calendar Generation', duration: '60 min' },
+          { type: 'project', title: 'LIVE PROJECT 2: 30-Day Calendar Generation', duration: '60 min', details: ['30 post concepts with hooks', 'Platform variations', 'Hashtag research'] },
           { type: 'module', title: '4.2 Repurposing Formulas', details: ['Blog to social posts', 'Video to carousel'] }
         ]
       },
@@ -265,7 +264,7 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
         objectives: ['Script video content', 'Faceless video production', 'YouTube metadata'],
         content: [
           { type: 'module', title: '5.1 Video Scripting System', details: ['Hook-body-CTA framework', 'Teleprompter formatting'] },
-          { type: 'exercise', title: 'SPRINT CHALLENGE 2: Script 5 Videos', duration: '60 min' }
+          { type: 'exercise', title: 'SPRINT CHALLENGE 2: Script 5 Videos', duration: '60 min', details: ['1 educational tutorial', '3 short-form pieces', '1 promotional video'] }
         ]
       },
       {
@@ -283,7 +282,7 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
         time: '4:30 PM - 6:30 PM',
         objectives: ['AI keyword research', 'On-page optimization', 'Internal linking'],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 3: Keyword Strategy Doc', duration: '45 min' },
+          { type: 'project', title: 'LIVE PROJECT 3: Keyword Strategy Doc', duration: '45 min', details: ['50 target keywords', 'Content cluster map'] },
           { type: 'exercise', title: 'GROUP EXERCISE: SEO Audit Swap', duration: '30 min' }
         ]
       }
@@ -300,7 +299,7 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
         objectives: ['Build automated pipelines', 'Connect via Zapier', 'Create Custom GPTs'],
         content: [
           { type: 'module', title: '8.1 No-Code Automation', details: ['Zapier walkthrough', 'RSS-to-social'] },
-          { type: 'project', title: 'LIVE PROJECT 4: Build Your Brand GPT', duration: 'Guided' }
+          { type: 'project', title: 'LIVE PROJECT 4: Build Your Brand GPT', duration: 'Guided', details: ['Embed brand voice doc', 'Integrate prompt templates'] }
         ]
       },
       {
@@ -317,7 +316,7 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
         time: '2:00 PM - 3:30 PM',
         objectives: ['90-day rollout plan', 'Troubleshooting', 'Success metrics'],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 5: Personal Action Plan', duration: '45 min' },
+          { type: 'project', title: 'LIVE PROJECT 5: Personal Action Plan', duration: '45 min', details: ['Week 1 priorities', 'Tool stack finalization'] },
           { type: 'module', title: '10.2 Obstacle Premortem', details: ['Common failure points'] }
         ]
       },
@@ -438,11 +437,11 @@ const LandingPage: React.FC<{ onEnroll: () => void }> = ({ onEnroll }) => {
             {/* Platform Icons Strip */}
             <div className="flex items-center gap-4 py-2 opacity-80">
               <span className="text-xs font-mono text-secondary uppercase tracking-widest mr-2">Content For All Platforms:</span>
-              <Instagram size={20} className="text-secondary hover:text-[#E1306C] transition-colors" />
-              <Linkedin size={20} className="text-secondary hover:text-[#0077B5] transition-colors" />
-              <Twitter size={20} className="text-secondary hover:text-primary transition-colors" />
-              <Facebook size={20} className="text-secondary hover:text-[#1877F2] transition-colors" />
-              <Youtube size={20} className="text-secondary hover:text-[#FF0000] transition-colors" />
+              <span title="Instagram"><Instagram size={20} className="text-secondary hover:text-[#E1306C] transition-colors" /></span>
+              <span title="LinkedIn"><Linkedin size={20} className="text-secondary hover:text-[#0077B5] transition-colors" /></span>
+              <span title="X (Twitter)"><Twitter size={20} className="text-secondary hover:text-primary transition-colors" /></span>
+              <span title="Facebook"><Facebook size={20} className="text-secondary hover:text-[#1877F2] transition-colors" /></span>
+              <span title="YouTube"><Youtube size={20} className="text-secondary hover:text-[#FF0000] transition-colors" /></span>
               <span title="Substack" className="flex items-center">
                 <Newspaper size={20} className="text-secondary hover:text-[#FF6719] transition-colors" />
               </span>
