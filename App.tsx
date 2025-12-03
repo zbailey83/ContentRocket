@@ -18,7 +18,8 @@ import {
   Facebook,
   Twitter,
   Youtube,
-  Newspaper
+  Newspaper,
+  Check
 } from 'lucide-react';
 import { 
   TechnicalGridBackground, 
@@ -82,30 +83,164 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
       {
         title: 'Session 1: Setup Sprint',
         time: '6:00 PM - 7:30 PM',
-        objectives: ['Configure AI tools', 'Establish brand voice', 'Create first asset (30m)'],
+        objectives: [
+          'Configure AI tools for immediate use', 
+          'Establish brand voice parameters', 
+          'Create first AI-generated asset within 30 minutes'
+        ],
         content: [
-          { type: 'module', title: '1.1 Welcome & Expectations', details: ['Roadmap overview', 'Accountability pods', 'Platform tutorial'] },
-          { type: 'module', title: '1.2 AI Tool Arsenal Setup', details: ['ChatGPT Plus/Claude Pro setup', 'Midjourney/DALL-E walkthrough', 'API key generation'] },
-          { type: 'exercise', title: 'LIVE EXERCISE 1: First Prompt Test', duration: '30 min' }
+          { 
+            type: 'module', 
+            title: '1.1 Welcome & Expectations (15 min)', 
+            details: [
+              'Course roadmap overview', 
+              'Deliverables checklist distribution', 
+              'Accountability pod assignments', 
+              'Platform navigation tutorial'
+            ] 
+          },
+          { 
+            type: 'module', 
+            title: '1.2 AI Tool Arsenal Setup (45 min)', 
+            details: [
+              'ChatGPT Plus/Claude Pro account verification', 
+              'Midjourney/DALL-E setup walkthrough', 
+              'Browser extension installations (Notion AI, Grammarly, etc.)', 
+              'API key generation for advanced users', 
+              'Bookmark folder organization'
+            ] 
+          },
+          { 
+            type: 'exercise', 
+            title: 'LIVE EXERCISE 1: First Prompt Test (30 min)', 
+            duration: '30 min',
+            details: [
+              'Students input their business details into provided template',
+              'Generate 3 headline variations using instructor-provided prompt',
+              'Share results in chat for live critique',
+              'Instructor demonstrates prompt refinement in real-time'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverable Checkpoint',
+            details: [
+              'Screenshot of functional AI tool dashboard',
+              '3 refined headlines for student\'s business'
+            ]
+          }
         ]
       },
       {
         title: 'Session 2: Brand Voice Engineering',
         time: '7:45 PM - 9:15 PM',
-        objectives: ['Extract unique voice', 'Build context doc', 'Generate long-form content'],
+        objectives: [
+          'Extract and codify unique brand voice', 
+          'Build reusable brand context document', 
+          'Generate first long-form content piece'
+        ],
         content: [
-          { type: 'module', title: '2.1 Voice DNA Extraction', details: ['Tone spectrum exercises', 'Competitor differentiation'] },
-          { type: 'project', title: 'LIVE PROJECT 1: Brand Voice Doc', duration: '45 min' },
-          { type: 'exercise', title: 'LIVE EXERCISE 2: First Blog Post (Homework)', duration: '60 min' }
+          { 
+            type: 'module', 
+            title: '2.1 Voice DNA Extraction (30 min)', 
+            details: [
+              'Analyzing existing content for patterns', 
+              'Tone spectrum exercises (formal ↔ casual, technical ↔ conversational)', 
+              'Identifying brand-specific vocabulary and phrases', 
+              'Competitor voice differentiation'
+            ] 
+          },
+          { 
+            type: 'project', 
+            title: 'LIVE PROJECT 1: Brand Voice Brief (45 min)', 
+            duration: '45 min',
+            details: [
+              'Company mission statement (AI-refined)',
+              'Target audience psychographics',
+              '10 sample phrases in brand voice',
+              '5 "never say" phrases',
+              'Tone calibration scale'
+            ]
+          },
+          { 
+            type: 'module', 
+            title: '2.2 Long-Form Content Generation (15 min)', 
+            details: [
+              'Blog structure formulas (listicle, how-to, thought leadership)',
+              'SEO keyword integration without keyword stuffing',
+              'Human editing for authenticity markers'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'LIVE EXERCISE 2: First Blog Post (Homework - 60 min)',
+            duration: 'Homework',
+            details: [
+              'Generate 1,500-word blog post using provided prompts',
+              'Upload draft to platform for Day 2 review',
+              'Peer review assignment (review 2 other posts by morning)'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverable Checkpoint',
+            details: [
+              'Completed Brand Voice Brief document',
+              'First draft blog post (submitted by 11:59 PM)'
+            ]
+          }
         ]
       },
       {
         title: 'Session 3: Visual Content Blitz',
         time: '9:30 PM - 11:00 PM',
-        objectives: ['Master image prompts', 'Create 10 graphics', 'Build visual style guide'],
+        objectives: [
+          'Master AI image generation prompts', 
+          'Create 10 graphics in 60 minutes', 
+          'Build reusable visual brand guidelines'
+        ],
         content: [
-          { type: 'module', title: '3.1 Image Prompt Engineering', details: ['Anatomy of effective prompts', 'Style consistency (seed numbers)'] },
-          { type: 'exercise', title: 'SPRINT CHALLENGE 1: 10 Graphics in 60 Minutes', duration: '60 min' }
+          { 
+            type: 'module', 
+            title: '3.1 Image Prompt Engineering (30 min)', 
+            details: [
+              'Anatomy of effective image prompts', 
+              'Style consistency techniques (seed numbers, style references)', 
+              'Aspect ratio selection for different platforms', 
+              'Negative prompts to avoid common mistakes'
+            ] 
+          },
+          {
+            type: 'demo',
+            title: 'LIVE DEMO: Instructor generates 5 variations live (15 min)'
+          },
+          { 
+            type: 'exercise', 
+            title: 'SPRINT CHALLENGE 1: 10 Graphics in 60 Minutes (60 min)', 
+            duration: '60 min',
+            details: [
+              'Students must create: 3 social media post graphics, 2 blog header images, 3 Instagram story templates, 2 LinkedIn carousel slides',
+              'Timer on screen | Instructor circulates virtual breakout rooms',
+              'Quick Wins Gallery: Students submit best 3 images to group gallery'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverable Checkpoint',
+            details: [
+              '10 AI-generated graphics',
+              'Personal visual style guide (colors, fonts, themes)'
+            ]
+          },
+          {
+            type: 'module',
+            title: 'Day 1 Wrap',
+            details: [
+              'Homework review: Polish blog post',
+              'Preview Day 2 deliverables',
+              'Accountability check-in'
+            ]
+          }
         ]
       }
     ]
@@ -638,6 +773,8 @@ const PlatformDashboard: React.FC<{ onBack: () => void }> = ({ onBack }) => {
                                           <span className={`text-xs font-mono px-1.5 py-0.5 rounded border ${
                                             item.type === 'exercise' ? 'border-yellow-500/30 text-yellow-500 bg-yellow-500/5' :
                                             item.type === 'project' ? 'border-green-500/30 text-green-500 bg-green-500/5' :
+                                            item.type === 'deliverable' ? 'border-purple-500/30 text-purple-500 bg-purple-500/5' :
+                                            item.type === 'demo' ? 'border-cyan-500/30 text-cyan-500 bg-cyan-500/5' :
                                             'border-border text-secondary'
                                           }`}>
                                             {item.type.toUpperCase()}

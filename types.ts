@@ -13,7 +13,7 @@ export interface Session {
   content: {
     title: string;
     details?: string[];
-    type: 'module' | 'exercise' | 'project' | 'break';
+    type: 'module' | 'exercise' | 'project' | 'break' | 'deliverable' | 'demo';
     duration?: string;
   }[];
 }
