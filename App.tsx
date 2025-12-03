@@ -276,7 +276,7 @@ const LandingPage: React.FC<{ onEnroll: () => void }> = ({ onEnroll }) => {
       <div className="w-full max-w-7xl mx-auto px-6 pt-6">
         <div className="flex items-center gap-2 font-bold text-xl tracking-tight">
           <Rocket className="text-accent-blue" />
-          <span>Content Rocket🚀</span>
+          <span>Content Rocket</span>
         </div>
       </div>
 
@@ -449,7 +449,7 @@ const LandingPage: React.FC<{ onEnroll: () => void }> = ({ onEnroll }) => {
           <div className="relative">
              <div className="absolute inset-0 bg-gradient-to-tr from-accent-blue/10 to-transparent rounded-xl"></div>
              <img 
-              src="https://picsum.photos/600/400?grayscale" 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
               alt="Workspace" 
               className="rounded-xl border border-border opacity-60 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700 shadow-2xl" 
              />
@@ -524,7 +524,7 @@ const PlatformDashboard: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <div className="p-6 border-b border-border">
           <div className="font-bold tracking-tight flex items-center gap-2">
             <Rocket size={20} className="text-accent-blue" />
-            Content Rocket🚀
+            Content Rocket
           </div>
         </div>
         
