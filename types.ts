@@ -1,3 +1,4 @@
+
 export interface CourseDay {
   id: string;
   day: string;
@@ -13,7 +14,7 @@ export interface Session {
   content: {
     title: string;
     details?: string[];
-    type: 'module' | 'exercise' | 'project' | 'break' | 'deliverable' | 'demo';
+    type: 'module' | 'exercise' | 'project' | 'break' | 'deliverable' | 'demo' | 'quiz';
     duration?: string;
   }[];
 }

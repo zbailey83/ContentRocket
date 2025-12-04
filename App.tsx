@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { 
   Terminal, 
@@ -252,38 +253,257 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
       {
         title: 'Session 4: Social Media Automation',
         time: '9:00 AM - 11:00 AM',
-        objectives: ['Build 30-day content calendar', 'Create platform variations', 'Automated repurposing workflows'],
+        objectives: [
+          'Build 30-day social content calendar', 
+          'Create platform-specific content variations', 
+          'Set up automated repurposing workflows'
+        ],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 2: 30-Day Calendar Generation', duration: '60 min', details: ['30 post concepts with hooks', 'Platform variations', 'Hashtag research'] },
-          { type: 'module', title: '4.2 Repurposing Formulas', details: ['Blog to social posts', 'Video to carousel'] }
+          { 
+            type: 'module', 
+            title: '4.1 Calendar Strategy (30 min)', 
+            details: [
+              'Content pillar framework (educate, entertain, engage, promote)',
+              'Platform-specific best practices',
+              'Batching methodology for efficiency'
+            ]
+          },
+          { 
+            type: 'project', 
+            title: 'LIVE PROJECT 2: 30-Day Calendar Generation (60 min)', 
+            duration: '60 min',
+            details: [
+              '30 post concepts with hooks',
+              'Platform variations (LinkedIn formal, Instagram casual, Twitter punchy)',
+              'Hashtag research and grouping',
+              'Content upgrade opportunities'
+            ]
+          },
+          { 
+            type: 'module', 
+            title: '4.2 Repurposing Formulas (30 min)', 
+            details: [
+              'Blog → 10 social posts formula',
+              'Video → carousel/infographic conversion',
+              'Podcast → quote graphics system'
+            ]
+          },
+          {
+            type: 'quiz',
+            title: 'QUIZ 1: Content Strategy (15 questions, 10 min)',
+            duration: '10 min',
+            details: [
+              'Multiple choice on platform best practices',
+              'Scenario-based prompt optimization',
+              'Pass threshold: 80%'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              'Complete 30-day content calendar (spreadsheet)',
+              '10 fully written social posts ready to schedule'
+            ]
+          }
         ]
       },
       {
         title: 'Session 5: Video Content Workshop',
         time: '11:15 AM - 1:15 PM',
-        objectives: ['Script video content', 'Faceless video production', 'YouTube metadata'],
+        objectives: [
+          'Script AI-generated video content', 
+          'Create faceless video content using AI tools', 
+          'Generate YouTube metadata at scale'
+        ],
         content: [
-          { type: 'module', title: '5.1 Video Scripting System', details: ['Hook-body-CTA framework', 'Teleprompter formatting'] },
-          { type: 'exercise', title: 'SPRINT CHALLENGE 2: Script 5 Videos', duration: '60 min', details: ['1 educational tutorial', '3 short-form pieces', '1 promotional video'] }
+          { 
+            type: 'module', 
+            title: '5.1 Video Scripting System (45 min)', 
+            details: [
+              'Hook-body-CTA framework',
+              'B-roll suggestion prompts',
+              'Teleprompter-friendly formatting',
+              'Caption/subtitle generation'
+            ]
+          },
+          {
+            type: 'demo',
+            title: 'LIVE DEMO: Instructor creates complete video script (20 min)'
+          },
+          { 
+            type: 'exercise', 
+            title: 'SPRINT CHALLENGE 2: Script 5 Videos (60 min)', 
+            duration: '60 min',
+            details: [
+              'Students create scripts for: 1 educational tutorial, 3 short-form content pieces, 1 promotional video'
+            ]
+          },
+          { 
+            type: 'module', 
+            title: '5.2 Faceless Video Production (15 min)', 
+            details: [
+              'Stock footage sourcing with AI',
+              'Text-to-speech natural voice selection',
+              'AI avatar tools overview (Synthesia, HeyGen)'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'GROUP EXERCISE: Video Critique (20 min)',
+            duration: '20 min',
+            details: [
+              'Students share one script in breakout rooms',
+              'Peer feedback using provided rubric',
+              'Instructor joins rooms for spot coaching'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              '5 complete video scripts with metadata',
+              '1 produced short-form video (optional bonus)'
+            ]
+          },
+          {
+            type: 'break',
+            title: 'LUNCH BREAK: 1:15 PM - 2:15 PM'
+          }
         ]
       },
       {
         title: 'Session 6: Copywriting Accelerator',
         time: '2:15 PM - 4:15 PM',
-        objectives: ['High-converting sales copy', 'Email sequences', 'Persuasion frameworks'],
+        objectives: [
+          'Generate high-converting sales copy', 
+          'Create email sequences', 
+          'Master persuasion frameworks with AI'
+        ],
         content: [
-          { type: 'module', title: '6.1 Conversion Frameworks', details: ['PAS, AIDA, BAB models'] },
-          { type: 'exercise', title: 'LIVE EXERCISE 3: Landing Page Copy', duration: '45 min' },
-          { type: 'exercise', title: 'SPRINT CHALLENGE 3: 7-Email Welcome Series', duration: '30 min' }
+          { 
+            type: 'module', 
+            title: '6.1 Conversion Copywriting Frameworks (45 min)', 
+            details: [
+              'PAS (Problem-Agitate-Solution)',
+              'AIDA (Attention-Interest-Desire-Action)',
+              'BAB (Before-After-Bridge)',
+              'Feature-Benefit translation matrices'
+            ]
+          },
+          { 
+            type: 'exercise', 
+            title: 'LIVE EXERCISE 3: Landing Page Copy (45 min)', 
+            duration: '45 min',
+            details: [
+              'Headline + subheadline (5 variations)',
+              'Hero section copy',
+              '3 benefit sections and social proof integration'
+            ]
+          },
+          { 
+            type: 'module', 
+            title: '6.2 Email Sequence Builder (30 min)', 
+            details: [
+              'Welcome sequence structure',
+              'Nurture email templates',
+              'Launch sequence timing'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'SPRINT CHALLENGE 3: 7-Email Welcome Series (30 min)',
+            duration: '30 min',
+            details: [
+              'Generate complete email sequence',
+              'Personalization token integration',
+              'Preview text optimization'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              'Complete landing page copy',
+              '7-email welcome sequence',
+              '20 subject line variations'
+            ]
+          }
         ]
       },
       {
         title: 'Session 7: SEO & Content Optimization',
         time: '4:30 PM - 6:30 PM',
-        objectives: ['AI keyword research', 'On-page optimization', 'Internal linking'],
+        objectives: [
+          'Conduct AI-powered keyword research', 
+          'Optimize existing content for search', 
+          'Build internal linking strategies'
+        ],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 3: Keyword Strategy Doc', duration: '45 min', details: ['50 target keywords', 'Content cluster map'] },
-          { type: 'exercise', title: 'GROUP EXERCISE: SEO Audit Swap', duration: '30 min' }
+          { 
+            type: 'module', 
+            title: '7.1 Keyword Research Automation (45 min)', 
+            details: [
+              'Search intent analysis with AI',
+              'Long-tail keyword generation',
+              'Competitor content gap analysis'
+            ]
+          },
+          { 
+            type: 'project', 
+            title: 'LIVE PROJECT 3: Keyword Strategy Document (45 min)', 
+            duration: '45 min',
+            details: [
+              '50 target keywords with search intent',
+              'Content cluster map (pillar + supporting articles)',
+              'Keyword-to-URL mapping spreadsheet'
+            ]
+          },
+          { 
+            type: 'module', 
+            title: '7.2 On-Page Optimization (30 min)', 
+            details: [
+              'Meta description generation',
+              'Header tag hierarchy',
+              'Image alt text automation'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'GROUP EXERCISE: SEO Audit Swap (30 min)',
+            duration: '30 min',
+            details: [
+              'Students exchange Day 1 blog posts',
+              'Run AI optimization prompts on peer content'
+            ]
+          },
+          {
+            type: 'quiz',
+            title: 'QUIZ 2: SEO Fundamentals (10 questions, 10 min)',
+            duration: '10 min',
+            details: [
+              'Keywords, search intent, on-page SEO',
+              'Pass threshold: 80%'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              'Keyword research document (50+ keywords)',
+              'Optimized version of Day 1 blog post',
+              'Content cluster roadmap'
+            ]
+          },
+          {
+            type: 'module',
+            title: 'Day 2 Wrap',
+            details: [
+              'Progress check: students should have 35+ assets completed',
+              'Preview Day 3 advanced techniques',
+              'Evening homework: Rest and review prompts library'
+            ]
+          }
         ]
       }
     ]
@@ -296,37 +516,221 @@ const DETAILED_CURRICULUM: DetailedDay[] = [
       {
         title: 'Session 8: AI Workflow Automation',
         time: '10:00 AM - 11:30 AM',
-        objectives: ['Build automated pipelines', 'Connect via Zapier', 'Create Custom GPTs'],
+        objectives: [
+          'Build automated content pipelines',
+          'Connect AI tools via Zapier/Make',
+          'Create custom GPTs for repeated tasks'
+        ],
         content: [
-          { type: 'module', title: '8.1 No-Code Automation', details: ['Zapier walkthrough', 'RSS-to-social'] },
-          { type: 'project', title: 'LIVE PROJECT 4: Build Your Brand GPT', duration: 'Guided', details: ['Embed brand voice doc', 'Integrate prompt templates'] }
+          {
+            type: 'module',
+            title: '8.1 No-Code Automation (45 min)',
+            details: [
+              'Zapier integration walkthrough',
+              'RSS-to-social automation',
+              'Content approval workflows',
+              'Auto-publishing setups'
+            ]
+          },
+          {
+            type: 'demo',
+            title: 'LIVE DEMO: Instructor builds complete workflow (30 min)',
+            details: ['Trigger: New blog post published', 'Actions: Generate social posts → Create graphics → Schedule']
+          },
+          {
+            type: 'module',
+            title: '8.2 Custom GPT Creation (45 min)',
+            details: [
+              'When to build custom GPTs vs. using ChatGPT',
+              'Training with brand documents',
+              'Prompt template embedding',
+              'Sharing and iteration'
+            ]
+          },
+          {
+            type: 'project',
+            title: 'LIVE PROJECT 4: Build Your Brand GPT (Guided)',
+            duration: 'Guided',
+            details: [
+              'Students create custom GPT with:',
+              'Brand voice document uploaded',
+              'Product/service information embedded',
+              'Reusable prompt templates integrated'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              '1 functional automation workflow',
+              'Custom brand GPT (or detailed prompt system)'
+            ]
+          }
         ]
       },
       {
         title: 'Session 9: Quality Control & Human Touch',
         time: '11:45 AM - 1:15 PM',
-        objectives: ['Identify AI tells', 'Add authenticity', 'Fact-checking'],
+        objectives: [
+          'Identify AI-generated content tells',
+          'Add authenticity and personality',
+          'Fact-check and edit efficiently'
+        ],
         content: [
-          { type: 'module', title: '9.1 The Human Edit Process', details: ['Detecting generic patterns', 'Injection points for stories'] },
-          { type: 'exercise', title: 'LIVE EXERCISE 4: Before/After Editing Sprint', duration: '30 min' }
+          {
+            type: 'module',
+            title: '9.1 The Human Edit Process (45 min)',
+            details: [
+              'Detecting generic AI language patterns',
+              'Injection points for personal stories',
+              'Fact-checking workflows',
+              'Legal and ethical considerations'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'LIVE EXERCISE 4: Before/After Editing Sprint (30 min)',
+            duration: '30 min',
+            details: [
+              'Instructor shows raw AI content',
+              'Class suggests improvements in real-time',
+              'Instructor implements edits live',
+              'Discussion of changes and impact'
+            ]
+          },
+          {
+            type: 'module',
+            title: '9.2 Building Your Editorial Standards (30 min)',
+            details: [
+              'Creating brand-specific AI usage guidelines',
+              'When to disclose AI assistance',
+              'Maintaining consistent quality at scale'
+            ]
+          },
+          {
+            type: 'exercise',
+            title: 'GROUP EXERCISE: Peer Editing Workshop (30 min)',
+            duration: '30 min',
+            details: [
+              'Students exchange one piece of content',
+              'Apply human editing techniques',
+              'Share improvements in group discussion'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              'Personal AI Editorial Guidelines document',
+              '3 pieces of content with "human touch" edits'
+            ]
+          },
+          {
+             type: 'break',
+             title: 'LUNCH BREAK: 1:15 PM - 2:00 PM'
+          }
         ]
       },
       {
         title: 'Session 10: Rapid Implementation Planning',
         time: '2:00 PM - 3:30 PM',
-        objectives: ['90-day rollout plan', 'Troubleshooting', 'Success metrics'],
+        objectives: [
+          'Create personalized 90-day rollout plan',
+          'Troubleshoot common obstacles',
+          'Set success metrics and tracking'
+        ],
         content: [
-          { type: 'project', title: 'LIVE PROJECT 5: Personal Action Plan', duration: '45 min', details: ['Week 1 priorities', 'Tool stack finalization'] },
-          { type: 'module', title: '10.2 Obstacle Premortem', details: ['Common failure points'] }
+          {
+            type: 'module',
+            title: '10.1 Your 90-Day Content Roadmap (45 min)',
+            details: [
+              'Week 1-4: Foundation and consistency',
+              'Week 5-8: Optimization and experimentation',
+              'Week 9-12: Scaling and team delegation',
+              'Content audit schedule'
+            ]
+          },
+          {
+            type: 'project',
+            title: 'LIVE PROJECT 5: Personal Action Plan (45 min)',
+            duration: '45 min',
+            details: [
+              'Week 1 priorities (specific tasks with deadlines)',
+              'Tool stack finalization',
+              'Team training plan (if applicable)',
+              'Budget allocation for AI tools'
+            ]
+          },
+          {
+            type: 'module',
+            title: '10.2 Obstacle Premortem (30 min)',
+            details: [
+              'Common failure points',
+              'Backup plans and contingencies',
+              'Community accountability strategies'
+            ]
+          },
+          {
+            type: 'quiz',
+            title: 'QUIZ 3: Course Comprehensive (20 questions, 15 min)',
+            duration: '15 min',
+            details: [
+              'Covers all 3 days',
+              'Scenario-based application questions',
+              'Pass threshold: 85% for certificate'
+            ]
+          },
+          {
+            type: 'deliverable',
+            title: 'Deliverables Checkpoint',
+            details: [
+              'Complete 90-day implementation plan',
+              'Week 1 task list (granular daily actions)'
+            ]
+          }
         ]
       },
       {
         title: 'Session 11: Live Feedback & Graduation',
         time: '3:45 PM - 5:15 PM',
-        objectives: ['Instructor feedback', 'Portfolio review', 'Accountability'],
+        objectives: [
+          'Receive personalized instructor feedback',
+          'Showcase best work to peers',
+          'Commit to accountability partnership'
+        ],
         content: [
-          { type: 'module', title: '11.1 Portfolio Review', details: ['Student presentations', 'Best in Show awards'] },
-          { type: 'module', title: '11.2 Accountability Lock-In', details: ['30-day challenge commitment'] }
+          {
+            type: 'module',
+            title: '11.1 Portfolio Review (60 min)',
+            details: [
+              'Students present their best 3 assets (5 min each)',
+              'Instructor provides live optimization tips',
+              'Class votes on "Best in Show" categories'
+            ]
+          },
+          {
+            type: 'module',
+            title: '11.2 Accountability Lock-In (30 min)',
+            details: [
+              '30-day challenge commitment ceremony',
+              'Accountability partner matching',
+              'Private support community invitation',
+              'Weekly check-in schedule'
+            ]
+          },
+          {
+            type: 'module',
+            title: 'Final Q&A and Troubleshooting (20 min)'
+          },
+          {
+            type: 'module',
+            title: 'Course Completion',
+            details: [
+              'Certificate of completion (requires 80%+ attendance & all deliverables)',
+              'Lifetime access to course materials',
+              'Alumni community invitation'
+            ]
+          }
         ]
       }
     ]
@@ -774,6 +1178,7 @@ const PlatformDashboard: React.FC<{ onBack: () => void }> = ({ onBack }) => {
                                             item.type === 'project' ? 'border-green-500/30 text-green-500 bg-green-500/5' :
                                             item.type === 'deliverable' ? 'border-purple-500/30 text-purple-500 bg-purple-500/5' :
                                             item.type === 'demo' ? 'border-cyan-500/30 text-cyan-500 bg-cyan-500/5' :
+                                            item.type === 'quiz' ? 'border-red-500/30 text-red-500 bg-red-500/5' :
                                             'border-border text-secondary'
                                           }`}>
                                             {item.type.toUpperCase()}
